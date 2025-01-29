@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="flex">
+            <div class="img-div">
+                <img src="assets/images/profile.jpg" alt="Profile Picture" data-testid="profilePicture" class="profile-img">
+            </div>
+        </div>
+        
+        <h2 data-testid="fullName">Muogbo Emmanuel</h2>
+        <p data-testid="currentLocation" class="location">Ile-ife, Nigeria</p>
+        <p data-testid="jobTitle" class="job-title">Software Engineer</p>
+        <p data-testid="shortBio">"I’m a front-end developer who crafts sleek, responsive web experiences—just like a perfectly baked cake! With a love for React.js, UI/UX design, and smooth animations (both in code and anime), I bring creativity and functionality to every project. When I’m not coding, you’ll find me devouring anime… or actual cake!"</p>
+        
+        <button class="btn github" data-testid="socialLinks-github" onclick="window.open('https://github.com/Nuel-MD')">GitHub</button>
+        <button class="btn" data-testid="socialLinks-linkedin" onclick="window.open('https://linkedin.com/in/Nuel-MD')">LinkedIn</button>
+        <button class="btn" data-testid="socialLinks-twitter" onclick="window.open('https://twitter.com/muogbo')">Twitter</button>
+        <button class="btn" data-testid="socialLinks-instagram" onclick="window.open('https://instagram.com/immathagreat')">Instagram</button>
+        
+        <!-- Button for Professional Email -->
+        <button class="btn" data-testid="emailAddress" onclick="window.location.href='mailto:eimuogbo@gmail.com'">Email</button>
+
+        <p class="utc-time" data-testid="currentTimeUTC">Current UTC Time: <span id="utc-time"></span></p>
+    </div>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
